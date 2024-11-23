@@ -23,7 +23,7 @@ export default function Navbar() {
             <button onClick={() => handleScrollTo("about")}>About</button>
           </li>
           <li className="hover:text-gray-300">
-            <button onClick={() => handleScrollTo("contact")}>Skill</button>
+            <button onClick={() => handleScrollTo("skill")}>Skill</button>
           </li>
         </ul>
       </div>

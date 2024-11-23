@@ -8,7 +8,7 @@ export default function ProgramingLang() {
       <div className="mt-10 z-50 mb-10">
         <Title title={"Programing Language"} />
       </div>
-      <section className="bg-gradient-to-r from-blue-800 to-black grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10 items-center p-10">
+      <section id="skill" className="bg-gradient-to-r from-blue-800 to-black grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10 items-center p-10">
         {data.map((item, index) => {
           return <ProgramingList data-aos="zoom-out-down" key={index} image={item.Image} language={item.Language} deskripsi={item.Deskripsi} />;
         })}

@@ -1,11 +1,9 @@
 import ProtoType from "prop-types";
-export default function ProjectCard({ image, title, description }) {
+export default function ProjectCard({ image, title }) {
   return (
-    <div className="w-full bg-white shadow-lg rounded-lg overflow-hidden">
-      <img className="w-full object-cover" src={image} alt="Project" />
-      <div className="p-4"></div>
-      <h3 className="text-xl font-bold text-gray-800">{title}</h3>
-      <p className="text-gray-600 mt-2">{description}</p>
+    <div className="relative w-24 h-2/4 bg-black rounded-xl m-12 group">
+      <a href="#laravel" className="absolute text-white bg-blue-500 right-0 rounded opacity-0 group-hover:opacity-100 group-hover:translate-x-12 px-3 py-1 group-hover:-translate-y-6 transition-all duration-700">{title}</a>
+      <img src={image} />
     </div>
   );
 }
@@ -13,5 +11,4 @@ export default function ProjectCard({ image, title, description }) {
 ProjectCard.propTypes = {
   image: ProtoType.string.isRequired,
   title: ProtoType.string.isRequired,
-  description: ProtoType.string.isRequired,
 };

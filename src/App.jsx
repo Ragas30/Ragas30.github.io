@@ -4,8 +4,9 @@ import Navbar from "./component/Navbar";
 import Wellcome from "./component/Wellcome";
 import ProgramingLang from "./ProgramingLang";
 import Aos from "aos";
-import 'aos/dist/aos.css';
+import "aos/dist/aos.css";
 import About from "./About";
+import ListProject from "./ListProject";
 
 function App() {
   useEffect(() => {
@@ -23,6 +24,7 @@ function App() {
       <Navbar />
       <Wellcome />
       <About />
+      <ListProject />
       <ProgramingLang />
 
       <Footer />

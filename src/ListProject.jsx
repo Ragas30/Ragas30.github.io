@@ -5,7 +5,7 @@ export default function ListProject() {
   return (
     <section className="bg-gradient-to-r from-blue-800 via-slate-300 to-black">
       <div className="flex flex-col py-16 mx-auto">
-        <Title title={"My Project"} />
+        <Title title={"Tech Stack"} />
         <div className="bg-gradient-to-l from-white via-gray200 to-black">
           <marquee direction="right" speed="100" className="text-5xl font-bold text-white">
             Work In Progress
@@ -13,7 +13,7 @@ export default function ListProject() {
         </div>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-1 items-center p-10">
           {project.map((item, index) => {
-            return <ProjectCard key={index} title={item.Title} image={item.Image} />;
+            return <ProjectCard key={index} title={item.Title} image={item.Image} targetdir={item.Targetdir} />;
           })}
         </div>
       </div>

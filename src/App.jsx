@@ -1,28 +1,25 @@
-import { useEffect } from "react";
 import Footer from "./component/Footer";
 import Navbar from "./component/Navbar";
 import Wellcome from "./component/Wellcome";
 import ProgramingLang from "./ProgramingLang";
-import Aos from "aos";
-import "aos/dist/aos.css";
 import About from "./About";
 import ListProject from "./ListProject";
+import AOS from "aos";
+import { useEffect } from "react";
+import WellcomePartII from "./component/WellcomePartII";
 
 function App() {
   useEffect(() => {
-    Aos.init({
-      offset: 100,
-      duration: 1200,
-      delay: 200,
-      easing: "ease-in-out",
-      once: false,
+    AOS.init({
       mirror: true,
     });
-  });
+  }, []);
+
   return (
     <>
       <Navbar />
       <Wellcome />
+      <WellcomePartII />
       <About />
       <ListProject />
       <ProgramingLang />

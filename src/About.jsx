@@ -8,7 +8,9 @@ export default function About() {
       </div>
 
       <div className="text-left text-white space-y-6">
-        <h1 className="text-4xl font-bold">Ragas Algaluh</h1>
+        <h1 className="text-4xl font-bold" data-aos="fade-up">
+          Ragas Algaluh
+        </h1>
         <p className="text-lg">
           Saya adalah seorang <span className="font-bold">fresh graduate</span> yang memiliki semangat besar dalam dunia teknologi, khususnya di bidang <span className="font-bold text-blue-400">frontend development</span>. Saya percaya
           bahwa sebuah desain yang baik dapat menjadi jembatan antara pengguna dan teknologi.

@@ -10,9 +10,9 @@ export default function Navbar() {
     <nav className="bg-gradient-to-r from-yellow-500 to-orange-500  fixed top-0 left-0 right-0 sm:px-6 lg:px-8 shadow-2xl z-50">
       <div className="flex justify-between items-center py-4">
         <h1 className="text-2xl font-bold text-white flex gap-1">
-          <a href="#home" onClick={() => handleScrollTo("home")}>
+          <button href="#home" onClick={() => handleScrollTo("home")}>
             Wellcome To My BIOS
-          </a>
+          </button>
         </h1>
         <ul className="flex gap-3 font-semibold text-white">
           <li className="hover:text-gray-300">

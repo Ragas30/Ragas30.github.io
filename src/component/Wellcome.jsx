@@ -37,7 +37,9 @@ export default function Wellcome() {
 
       {/* Efek Scroll Down */}
       <div className="absolute bottom-10 flex justify-center w-full">
-        <span className="text-white animate-bounce text-sm">Scroll Down ↓</span>
+        <button onClick={() => handleScroll("about")} className="text-white animate-bounce text-sm">
+          Scroll Down ↓
+        </button>
       </div>
     </section>
   );

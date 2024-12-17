@@ -13,6 +13,9 @@ export default function SocialMedia() {
       <a href="https://www.tiktok.com/@uicodes/video/7410358646762163462" target="_blank" rel="noopener noreferrer">
         <img src="/icon/tiktok.png" alt="Linkedin" className="w-8 h-8" />
       </a>
+      <a href="https://github.com/Ragas30" target="_blank" rel="noopener noreferrer">
+        <img src="/icon/github.png" alt="Linkedin" className="w-8 h-8" />
+      </a>
     </div>
   );
 }

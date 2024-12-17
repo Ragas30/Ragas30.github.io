@@ -9,12 +9,16 @@ const ListProject = () => {
   const closeModal = () => setIsModalOpen(false);
 
   return (
-    <div className="flex flex-col items-center justify-center h-screen bg-gray-100">
-      <h1 className="text-3xl font-bold mb-4">Daftar Project</h1>
-      <button onClick={openModal} className="px-4 py-2 bg-blue-500 text-white rounded hover:bg-blue-600">
+    <div className="flex flex-col items-center justify-center h-screen bg-gradient-to-br from-blue-500 to-purple-600 text-white">
+      {/* Header */}
+      <h1 className="text-4xl md:text-5xl font-extrabold mb-6 drop-shadow-xl">Daftar Project</h1>
+
+      {/* Tombol Lihat Project */}
+      <button onClick={openModal} className="px-6 py-3 bg-white text-blue-600 font-semibold rounded-full shadow-lg hover:bg-blue-600 hover:text-white transition-transform transform hover:scale-105 active:scale-95 duration-300">
         Lihat Project
       </button>
 
+      {/* Modal */}
       <Modal isOpen={isModalOpen} onClose={closeModal} projects={project} />
     </div>
   );

@@ -5,8 +5,8 @@ export default function Footer() {
         <p>
           &copy; {"It's"} All Belong to{" "}
           <a href="https://www.instagram.com/ralgaluh_/" className="hover:underline hover:text-blue-500" target="_blank" rel="noopener noreferrer">
-            R30
-          </a>
+            R30 Page
+          </a>{" "}
         </p>
       </div>
     </footer>

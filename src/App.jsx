@@ -6,11 +6,13 @@ import About from "./About";
 import ListProject from "./ListProject";
 import AOS from "aos";
 import { useEffect } from "react";
-import WellcomePartII from "./component/WellcomePartII";
 
 function App() {
   useEffect(() => {
     AOS.init({
+      duration: 1000,
+      once: false,
+      delay: 200,
       mirror: true,
     });
   }, []);
@@ -19,11 +21,9 @@ function App() {
     <>
       <Navbar />
       <Wellcome />
-      <WellcomePartII />
       <About />
-      <ListProject />
       <ProgramingLang />
-
+      <ListProject />
       <Footer />
     </>
   );

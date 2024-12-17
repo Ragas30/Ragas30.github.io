@@ -16,6 +16,9 @@ export default function SocialMedia() {
       <a href="https://github.com/Ragas30" target="_blank" rel="noopener noreferrer">
         <img src="/icon/github.png" alt="Linkedin" className="w-8 h-8" />
       </a>
+      <a href="https://discordapp.com/users/530622192870883330" target="_blank" rel="noopener noreferrer">
+        <img src="/icon/discord.png" alt="Linkedin" className="w-8 h-8" />
+      </a>
     </div>
   );
 }

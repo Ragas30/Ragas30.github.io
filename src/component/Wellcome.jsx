@@ -11,10 +11,11 @@ export default function Wellcome() {
       className="relative flex flex-col items-center justify-center h-screen bg-cover bg-center text-white"
       style={{ backgroundImage: "url('/background/1123013.jpg')" }} // Ganti dengan path gambar Anda
     >
-      {/* Overlay */}
-      <div className="absolute inset-0 bg-black bg-opacity-60"></div>
+      
+      <div className="absolute inset-0 bg-black bg-opacity-60">
+      </div>
 
-      {/* Konten Utama */}
+      
       <div className="relative z-10 text-center px-6">
         <h1 data-aos="fade-up" data-aos-duration="1000" className="text-5xl sm:text-6xl font-extrabold mb-4 tracking-wide text-blue-400">
           Welcome To My <span className="text-white">BIOS</span>
@@ -23,7 +24,7 @@ export default function Wellcome() {
           Selamat Datang di Halaman Website Pribadi Saya
         </p>
 
-        {/* Button CTA */}
+        
         <button
           href="#about"
           onClick={() => handleScroll("about")}
@@ -35,7 +36,7 @@ export default function Wellcome() {
         </button>
       </div>
 
-      {/* Efek Scroll Down */}
+      
       <div className="absolute bottom-10 flex justify-center w-full">
         <button onClick={() => handleScroll("about")} className="text-white animate-bounce text-sm">
           Scroll Down ↓

@@ -14,7 +14,7 @@ const Modal = ({ isOpen, onClose, projects }) => {
           </button>
         </div>
 
-        {/* List Projects */}
+        
         <ul className="grid grid-cols-1 sm:grid-cols-2 gap-6">
           {projects.map((project, index) => (
             <li key={index} className="flex items-center space-x-4 border-b pb-4">
@@ -29,7 +29,7 @@ const Modal = ({ isOpen, onClose, projects }) => {
           ))}
         </ul>
 
-        {/* Tombol Tutup */}
+        
         <div className="mt-6 text-right">
           <button onClick={onClose} className="px-6 py-2 bg-red-500 text-white rounded-lg hover:bg-red-600">
             Tutup

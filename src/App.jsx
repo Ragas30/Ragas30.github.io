@@ -6,7 +6,7 @@ import About from "./About";
 import ListProject from "./ListProject";
 import AOS from "aos";
 import { useEffect } from "react";
-import VisitorCounter from "./component/VisitorCounter";
+// import VisitorCounter from "./component/VisitorCounter";
 
 function App() {
   useEffect(() => {
@@ -25,7 +25,7 @@ function App() {
       <About />
       <ProgramingLang />
       <ListProject />
-      <VisitorCounter />
+      {/* <VisitorCounter /> */}
       <Footer />
     </>
   );

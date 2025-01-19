@@ -17,20 +17,21 @@ export default function Wellcome() {
 
       
       <div className="relative z-10 text-center px-6">
-        <h1 data-aos="fade-up" data-aos-duration="1000" className="text-5xl sm:text-6xl font-extrabold mb-4 tracking-wide text-blue-400">
+        <h1 data-aos="fade-up" data-aos-duration="1000" className="text-5xl sm:text-6xl font-bold mb-4 tracking-wide text-blue-400 font-ubuntu">
           Welcome To My <span className="text-white">BIOS</span>
         </h1>
-        <p data-aos="fade-up" data-aos-delay="200" data-aos-duration="1000" className="text-lg sm:text-2xl mb-6">
+        <p data-aos="fade-up" data-aos-delay="200" data-aos-duration="1000" className="text-lg sm:text-2xl mb-6 font-ubuntu">
           Selamat Datang di Halaman Website Pribadi Saya
         </p>
 
         
+
         <button
           href="#about"
           onClick={() => handleScroll("about")}
           data-aos="zoom-in"
           data-aos-delay="400"
-          className="inline-block px-6 py-3 bg-blue-500 hover:bg-blue-600 text-white font-semibold rounded-lg shadow-lg transition-transform transform hover:scale-105"
+          className="inline-block px-6 py-3 bg-blue-500 hover:bg-blue-600 text-white font-semibold rounded-lg shadow-lg transition-transform transform hover:scale-105 font-ubuntu"
         >
           Lihat Profil Saya
         </button>
@@ -38,10 +39,14 @@ export default function Wellcome() {
 
       
       <div className="absolute bottom-10 flex justify-center w-full">
-        <button onClick={() => handleScroll("about")} className="text-white animate-bounce text-sm">
+        <button onClick={() => handleScroll("about")} className="text-white animate-bounce text-sm font-ubuntu">
           Scroll Down ↓
         </button>
       </div>
     </section>
   );
 }
+
+
+  
+
